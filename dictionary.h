@@ -23,11 +23,11 @@
 typedef struct node
 {
     char word[LENGTH + 1];
-    struct node* next;
+    struct node *next;
 }
 node;
 
-typedef node* hashmap_t;
+typedef node *hashmap_t;
 
 /**
  * Array misspelled is populated with words that are misspelled. Returns the length of misspelled.
@@ -48,7 +48,7 @@ typedef node* hashmap_t;
  * Example:
  *  int num_misspelled = check_words(text_file, hashtable, misspelled);
  **/
-int check_words(FILE* fp, hashmap_t hashtable[], char * misspelled[]);
+int check_words(FILE *fp, hashmap_t hashtable[], char *misspelled[]);
 
 /**
  * Returns true if word is in dictionary else false.
@@ -66,7 +66,7 @@ int check_words(FILE* fp, hashmap_t hashtable[], char * misspelled[]);
  * Example:
  *  bool correct  = check_word(word, hashtable);
  **/
-bool check_word(const char* word, hashmap_t hashtable[]);
+bool check_word(const char *word, hashmap_t hashtable[]);
 
 /**
  * Loads dictionary into memory.  Returns true if successful else false.
@@ -85,11 +85,11 @@ bool check_word(const char* word, hashmap_t hashtable[]);
  * Example:
  *  bool success = load_dictionary("wordlist.txt", hashtable);
  **/
-bool load_dictionary(const char* dictionary_file, hashmap_t hashtable[]);
+bool load_dictionary(const char *dictionary_file, hashmap_t hashtable[]);
 
 /**
  * Already implemented in dictionary.c
  **/
-int hash_function(const char* word);
+int hash_function(const char *word);
 
 #endif // DICTIONARY_H
