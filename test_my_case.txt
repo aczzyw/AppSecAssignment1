@@ -1,0 +1,3 @@
+This is a te:st 'case that covers al the case 123456 I can??? find out.
+Punctuation & numeric are taking into consideration .;; -= 中文
+Thiscasecoversthesituationthatexceedthewordlength
